@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type="text/css" href="estils_form.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--Creem un div per que englobi tot el formulari i poder aplicarli una serie d'estils com es el padding-->
+    <div style="width:60%; margin:5% auto;background-color:#D5E1FF; padding:10px;">
+        <form action="formulari_enviat.html">
+            <!--Creem un fieldset per englobar el nom, el Email, el teléfono, i una llista d'opcions-->
+            <fieldset>
+            <!--Afegim una caixa per afegir el nom-->
+            <fieldset>
+                <legend>Introdueix el teu Nom</legend>
+                <label for="cajanombre">Nom</label>
+                <input class="amplada_email_text" type="text" id="cajanombre" name="cajanombre" required>
+            </fieldset>
+        <br>
+            <!--Afegim una caixa per a introduir el email-->
+            <fieldset>
+                <legend>Introdueix el teu email</legend>
+                <label for="cajaemail">Email</label>
+                <input  class="amplada_email_text" type="email" id="cajaemail" name="cajaemail" required>
+            </fieldset>
+        <br>
+            <!--Afegim una caixa per a introduir el teléfono-->
+            <fieldset>
+                <legend>Introdueix el teu teléfon</legend>
+                <label for="cajatel">Teléfon</label>
+                <input type="tel" id="cajatel" name="cajatel" pattern="[0-9]{9}" required>
+                <small>Has d'introduir un teléfon español, per exemple, 673298347 </small>
+            </fieldset>
+        <br>
+            <!--Afegim una llista d'opcions a escollir-->
+            <fieldset>
+                <legend>Selecciona la teva edat</legend>
+                <label for="listaopciones">Edat</label>
+                <select id="listaopciones" name="listaopciones" required>
+                    <option> 18</option>
+                    <option> +18</option>
+                    <option> -18</option>
+                </select>
+            </fieldset>
+        <br>
+            </fieldset>
+   <br>
+   <br>
+            <!--Afegim una serie de checkbox-->
+            <fieldset required>
+                <legend>Selecciona el tipus de document</legend>
+                <input type="checkbox" id="cajadni" name="cajasseleccion" >
+                <label for="cajadni" checked>DNI</label><br>
+                <input type="checkbox" id="cajanie" name="cajasseleccion" >
+                <label for="cajanie">NIE</label><br>
+                <input type="checkbox" id="cajapasaporte" name="cajasseleccion">
+                <label for="cajapasaporte">Pasaporte</label><br>
+                <input type="checkbox" id="cajaotros" name="cajasseleccion">
+                <label for="cajaotros">Otros</label>
+            </fieldset>
+   <br>
+   <br>
+        <!--Afegim una serie de radio button-->
+            <fieldset>
+                <legend>Escull la teva saga de videojocs preferida</legend>
+                <input type="radio" id="Spider-Man PS4" name="sagafavorito" checked required/>
+                <label for="Spider-Man PS4">Spider-Man PS4</label><br />       
+                <input type="radio" id="God Of War" name="sagafavorito" required/>
+                <label for="God Of War">God Of War</label><br />        
+                <input type="radio" id="Resident Evil" name="sagafavorito" required/>
+                <label for="Resident Evil">Resident Evil</label><br>
+                <input type="radio" id="Far cry" name="sagafavorito" required/>
+                <label for="Far cry">Far cry</label><br>
+                <input type="radio" id="Uncharted" name="sagafavorito" required/>
+                <label for="Uncharted">Uncharted</label><br>
+                <input type="radio" id="Cap" name="sagafavorito" required/>
+                <label for="Cap">Cap</label>
+            </fieldset>
+        <br>
+            <!--Afegim una caixa gran de text, textarea-->
+            <fieldset>
+                <legend for="cajatextogrande">Comentaris</legend> <!--introdueixo el for aquí perquè si poso un label queda malament-->
+                <textarea id="cajatextogrande" name="cajatextogrande" rows="10" cols="50" placeholder="Escriu algunes observacions..." required></textarea>
+            </fieldset>
+        <br>
+        <br>
+            <!--Afegim un botò a la pàgina y ho enllaçem amb la pàgina nova creada "formulari_enviat.html"-->
+            <div style="text-align:center">
+            <input class="boton" type="submit">
+            </div>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/*Apliquem estils de font de lletra y color de fons al body*/
+body{
+    background-color:#8AA5E7;
+    font-family:sans-serif"
+}
+
+/*Apliquem estils d'amplada a la caixa de text i a la caixa del email*/
+.amplada_email_text{
+    width:300px;
+}
+/*Apliquem estils d'ampladaa a la caixa del teléfon*/
+#cajatel{
+    width:100px;
+}
+/*Apliquem estils de color de fons al boto de les dues págines*/
+.boton{
+    background-color:#A684EE;
+}
+/*Apliquem estils cambi de color al botó de les dues págines quan passen el cursor per sobre*/
+.boton:hover{
+    background-color:#E8B16A;
+}
+/*Apliquem estils de color de fons quan hi clickem sobre qualsevol input del formulari*/
+input:focus{
+    background-color:#E5D66A;
+}
+/*Apliquem estils de color de fons quan hi clcikem sobre el textarea del formulari*/
+#cajatextogrande:focus{
+    background-color:#E5D66A;
+}
